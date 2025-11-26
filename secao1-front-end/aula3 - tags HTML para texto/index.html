@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img-in-text {
+            width: 50px;
+            height: 50px;
+        }
+        .vermelho{
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cabeçalho</h1>
+    <!--Bold <b> deixa o texto em negrito-->
+    <p>
+        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+        <!--A tag <i> deixa em italico-->
+        <i>Itaque minima atque, nesciunt doloremque sint repudiandae.</i>
+        <!--A tag <em> dda enfâse em alguma frase-->
+        <em>Optio, omnis dolores.</em>
+        <!--A tag <del> serve pra fazer uma errata e <ins> serve para inserir uma nova informação-->
+        <!--Ja a tag <s> e <u> são tags fisicas e nao semanticas, serve para riscar e sublinhar-->
+        <del>Nisi</del> <ins>Deletei o anterior e inseri esse</ins>, <s>magnam</s> <u>consequuntur</u>
+        <!--Tem também a tag <small> para diminuir a fonte da palavra, <sup> para fazer elevado e <sub> pra fazer em baixo-->
+        <small>asperiores</small> similique 2<sup>2</sup> voluptatibus H<sub>2</sub>
+        <!--Tem a tag <br> para pular linha e a <q> para citação-->
+        <br>
+        <q>O dolore</q> optio vero animi totam quidem!
+        <a href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/24624900#overview"
+            target="_blank">
+            <img class="img-in-text" src="https://cdn-cms.king.host/blog-hlg/uploads/2023/12/java.webp"
+                alt="pessoa codando">
+        </a>
+    </p>
+
+    <p>
+        <!--Strong é uma tag semantica, deixa uma frase mais forte-->
+        <strong>ipsum dolor sit amet, consectetur adipisicing elit.</strong>
+        <!--A tag <span> é uma tag de container genérico inline e pode ser usado dentro do paragrafo-->
+        <span class="vermelho">Aqui é um span e nao distorce o texto</span> minima atque, nesciunt doloremque sint repudiandae.
+        <!--A tag <div> é uma tag generica também block e caso usado dentro do paragrafo pode quebrar as partes de baixo-->
+        <div class="vermelho">Aqui é uma div e distorce o restante do texto</div>  Nisi, magnam consequuntur asperiores similique voluptatibus dolore optio vero animi totam quidem!
+    </p>
+
+    <hr>
+
+    <blockquote
+        cite="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/24624900#overview">
+        Aqui estou fazendo um bloco de citação que não pode ser usado dentro da tag "p"
+        <p>Mas eu posso usar uma tag "p" dentro do blockquote</p>
+    </blockquote>
+
+    <hr>
+
+    <code>console.log("Posso usar tag "code" para refenciar um código")</code>
+
+    <!--A tag <pre> mantém a formatação   -->
+    <pre>
+        <code>
+            const num1 = 2;
+            const num2 = 10;
+            resultado = num1 ** num2; 
+
+            console.log(resultado);
+
+            let contador = 1;
+            contador ++; // 2
+            contador ++; // 3
+            ++contador; // 4
+            ++contador; // 5
+
+            console.log(contador);
+
+            // NaN - Not a number, parseInt (inteiro), parseFloat (decimais), Number (número)
+            const teste = '7';
+            let teste2 = Number(teste);
+
+            console.log(teste2);
+        </code>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a92a67ee-cd07-46a8-8354-c431a96a97b0/web/BR-pt-20251103-TRIFECTA-perspective_e7b0edc4-c983-4d86-a08f-2f5f67301faa_large.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+        #heading {
+            background: rgba(0,0,0, 0.5);
+            justify-content: space-between;
+        }
+
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            /* O margin é o mesmo esquema do padding, neste caso ta 0 pro eixo y e auto pro eixo x*/
+            margin: 0 auto;
+        }
+
+        #heading .h1 {
+            /* padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 0px; 
+            Se eu colocar só um valor é pra todos os lados, se eu colocar 2 valores é (y, x) e se colocar 4 valores 
+            segue sentido horário(topo, direita, baixo, esquerda)*/
+            padding: 15px 0px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        #heading a {
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <a href="#">Entrar</a>
+            </h2>
+        </div>
+    </header>
+</body>
+
+</html>

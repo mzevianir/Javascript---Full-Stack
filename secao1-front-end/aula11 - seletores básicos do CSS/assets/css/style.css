@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-section p {
+    font-style: italic;
+    color: red;
+}
+
+.main-section p.specific-content {
+    color: purple;
+}
