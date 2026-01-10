@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+.texto{
+    background: red;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 0;
+    min-width: 0;
+    overflow: auto;
+    /*margin dessa forma ajusta no meio de forma automatica, o 0 é o eixo y*/
+    margin: 0 auto;
+}

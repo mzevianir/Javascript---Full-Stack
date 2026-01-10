@@ -1,0 +1,11 @@
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 70px;
+}
+
+p {
+    /* inherit eu ativo a herança e initial eu desativo a herança*/
+    font-size: inherit;
+    color: initial;
+}

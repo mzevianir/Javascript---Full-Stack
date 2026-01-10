@@ -3,11 +3,121 @@
     padding: 0px;
 }
 
-.main-section p {
+div {
+    color: initial;
+    margin-left: 25px;
+}
+
+/* .main-section p {
     font-style: italic;
     color: red;
 }
 
 .main-section p.specific-content {
     color: purple;
+} */
+
+.pai{
+    color: initial;
+}
+
+.filha{
+    color: initial;
+}
+
+.pai .filha{
+    background: yellow ;
+}
+
+.pai > .filha{
+    color: purple;
+}
+
+.pai > .filha > .filha{
+    color: pink;
+}
+
+.pai h1+p {
+    color: purple;
+}
+
+.pai p+h1 {
+    color: green;
+}
+
+.pai .um~.dois{
+    color: brown;
+}
+
+.pai .dois~.um{
+    color: cyan;
+}
+
+[meu-atributo="valorQualquer"] { 
+    color: lightgreen;
+}
+
+[meu-atributo="outroValor"] { 
+    color: palevioletred;
+}
+
+[meu-atributo1] { 
+    color: chocolate;
+}
+
+[checked]{
+    width: 50px;
+    height: 50px;
+}
+
+.heading{
+    transition: all 1s ease-in-out;
+}
+
+.heading:hover{
+    background: green;
+}
+
+a{
+    color: darkgoldenrod;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    background: brown;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    cursor: pointer;
+}
+
+input:checked{
+    width: 50px;
+    height: 50px;
 }
