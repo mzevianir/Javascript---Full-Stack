@@ -1,0 +1,35 @@
+/*É usado esse seletor pra limpar a página e remover qualquer formação pré existente*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-one,
+.section-two {
+    /* Esse parametro define o tamanho da box ou seja, a borda, margin, padding e conteudo vai ter o tamanho delimitado*/
+    box-sizing: border-box;
+}
+
+/* Aqui estou selecionando todos as classes*/
+.section-one {
+    width: 200px;
+
+    background: deeppink;
+    border: 5px solid black;
+    /*Esse é o parametro para aumentar a distancia da borda do conteúdo*/
+    padding: 15px;
+    /*Esse é o parametro para aumentar a distancia dos cantos do navegador e de outros conteudos, sendo usado a maior margin entre eles*/
+    margin: 30px;
+}
+
+.section-two {
+    background: cyan;
+    width: 200px;
+    height: 50px;
+    border: 5px solid black;
+    /*Esse é o parametro para aumentar a distancia da borda do conteúdo*/
+    padding: 15px;
+    /*Esse é o parametro para aumentar a distancia dos cantos do navegador*/
+    margin: 20px;
+}

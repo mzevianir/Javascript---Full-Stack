@@ -1,0 +1,33 @@
+/*É usado esse seletor pra limpar a página e remover qualquer formação pré existente*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: italic;
+}
+
+/*Aqui define que todas div vai ter essas caracteristicas*/
+div {
+    color: initial;
+    /*No caso a margin considera a partir do pai por isso fica identado*/
+    margin-left: 20px;
+}
+
+/*Aqui define que apenas a classe filha e as dependentes da filha da classe pai vai ser em italico e em negrito*/
+.pai .filha {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*Aqui defini que a filha direta do pai vai ter a cor verde*/
+.pai>.filha {
+    color: green
+}
+
+/*Aqui defini que a filha direta da filha do pai vai ter a cor rosa*/
+.pai>.filha .filha {
+    color: pink
+}

@@ -1,0 +1,60 @@
+/*É usado esse seletor pra limpar a página e remover qualquer formação pré existente*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selecionei o irmão direto de um pai, no caso seria o primeiro p depois de um h1 */
+.pai h1+p {
+    color: red;
+}
+
+.pai p+h1 {
+    color: green;
+}
+
+/*Aqui vai selecionar TODOS os p depois de um h1*/
+.pai h1~p {
+    font-style: italic;
+}
+
+[meu-atributo="valor"] {
+    margin: 30px;
+}
+
+[checked] {
+    width: 25px;
+    height: 25px;
+}
+
+/*Isso é uma pseudoclasse, quando tem : e a ação*/
+h1:hover {
+    background-color: blue;
+}
+
+a {
+    color: darkorange;
+}
+
+/*A paseudo class :link é pra quando nunca visitou*/
+a:link {
+    color: blueviolet;
+}
+
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
